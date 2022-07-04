@@ -1,1 +1,1 @@
-pretextbook == 0.6.4
+pretextbook == 0.8.1
