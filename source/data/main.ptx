@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="data" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Representing Data</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		<p>
+			This unit focuses on different ways to represent data.  We will specifically investigate representing data in tables, representing data graphically, and ways of interpreting represented data.
+		</p>
+		
+		<p>
+			Directly below are links to quickly navigate to individual sections.
+		</p>
+	</introduction>
+    <xi:include href="./repdata.ptx"/>  
+	<!--
+	<xi:include href="./12.xml"/>
+    <xi:include href="./13.xml"/>
+    <xi:include href="./14.xml"/>
+    <xi:include href="./15.xml"/>
+    <xi:include href="./16.xml"/>
+	<xi:include href="./17.xml"/>
+	<xi:include href="./18.xml"/>
+	-->
+	
+</chapter>

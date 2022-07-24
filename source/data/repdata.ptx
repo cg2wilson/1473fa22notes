@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="data-rep" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Qualitative Data</title>
+    
+    <subsection xml:id="data-rep-qualquant">
+        <title>Qualitative and Quantitative Data</title>
+        <p>
+            Data is all around us, and informs much of how our lives run.  Let's focus on two specific types of data, <term>qualitative data</term> and <term>qualitative data</term>. 
+        </p>
+        <definition xml:id="qualquantdata">
+            <statement>
+                <p>
+                    <term>Qualitative data</term> is data which describes qualities or characteristics.  Sometimes qualitative data is called <term>categorical data</term>.
+                </p>
+                <p>
+                    <term>Quantitative data</term> is data which is represented using numbers.
+                </p>
+            </statement>
+            <idx><h>Qualitative data</h></idx>
+            <idx><h>Quantitative data</h></idx> 
+            <idx><h>Categorical data</h></idx>
+        </definition>
+
+        <example>
+            Classify the following data from members of our class as qualitative or quantitative.  Give a brief explanation for the answer.
+            <ol label = "a">
+                <li>
+                    <p>
+                        Color of hair
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Political affiliation
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Height
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Classification by credit hours
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Number of hours taken this semester
+                    </p>
+                </li>
+            </ol>
+            <solution>
+                <p>
+                    <ol label = "a">
+                <li>
+                    <p>
+                        Quantiative - color is a quality
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Quantitative - the description is verbal/a quality
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Qualitative - the height will be given numerically
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Quantitative - even though we can look at year in school, classification ("freshman", "junior", etc.) is verbal
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Quantitative - credit hours are numerical
+                    </p>
+                </li>
+            </ol>
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Come up with three sets of quantitative data and three sets of qualitative data.  These should be different than the previous example!
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Answers vary
+                </p>
+            </solution>
+        </example>
+    </subsection>
+    <subsection xml:id="data-rep-frequency">
+        <title>Representing Qualitative Data</title>
+        <p>
+            When data is collected, we need a way to communicate the information effectively.
+        </p>
+        <p>
+            One way of communicating qualitative information is by using a <term>frequency distribution</term>.
+        </p>
+        <definition xml:id="frequencydist">
+            <statement>
+                <p>
+                    A <term>frequency distribution</term> is a two-column table which collects the number of times a category appears in a set of data.
+                </p>
+                <idx><h>Frequency distribution</h></idx>
+            </statement>
+        </definition>
+        
+        <example>
+            <statement>
+                A store employee is doing an inventory of items near the register.  They found 51 bags of chips, 62 candy bars, 47 bags of candy, 121 packs of gum, 16 bags of nuts, 20 soft drinks, and 20 bottles of water.  Create a frequency table to display the result of the inventory.
+            </statement>
+            <solution>
+                <p>
+                    <tabular>
+                        <row>
+                            <cell>Item</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>Chips</cell>
+                            <cell>51</cell>
+                        </row>
+                        <row>
+                            <cell>Candy Bars</cell>
+                            <cell>62</cell>
+                        </row>
+                        <row>
+                            <cell>Candy Bags</cell>
+                            <cell>47</cell>
+                        </row>
+                        <row>
+                            <cell>Gum</cell>
+                            <cell>121</cell>
+                        </row>
+                        <row>
+                            <cell>Nuts</cell>
+                            <cell>16</cell>
+                        </row>
+                        <row>
+                            <cell>Soft Drinks</cell>
+                            <cell>20</cell>
+                        </row>
+                        <row>
+                            <cell>Water</cell>
+                            <cell>20</cell>
+                        </row>
+                    </tabular>
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Find out the state (or country) of birth of the portion of the class your instructor specifies.  Once you've collected the data, create a frequency table for the data.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Answers vary
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            We can also graphically represent qualitative data.  This is often done using a <term>bar graph</term>.
+        </p>
+
+        <definition xml:id="bargraph">
+            <statement>
+                <p>
+                    A <term>bar graph</term> is a graph that represents category frequencies with a bar whose length is equal to the frequency.
+                </p>
+                <idx><h>Bar Graph</h></idx>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Create a bar graph for the data from Example 1.1.2.  For convenience, here is the data again: A store employee is doing an inventory of items near the register.  They found 51 bags of chips, 62 candy bars, 47 bags of candy, 121 packs of gum, 16 bags of nuts, 20 soft drinks, and 20 bottles of water.
+                </p>
+            </statement>
+            <solution>  
+                <p>
+                    There's a lot of variation in this, but the graph should look something like this.
+                </p>
+                <p>
+                    <image> 
+                        <description>
+                            The bar graph associated with the data given in Example 1.1.2.  
+                        </description>
+                        <latex-image>
+                            <![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[
+                                        title = Inventory Results,
+                                        ybar,
+                                        bar width = 0.5cm,
+                                        symbolic x coords = {Chips, Bars, Bags, Gum, Nuts, Sodas, Water},
+                                    ]
+                                    \addplot coordinates {(Chips, 51) (Bars, 62) (Bags, 47) (Gum, 121) (Nuts, 16) (Sodas, 20) (Water, 20)};
+                                    \end{axis}
+                                \end{tikzpicture}
+                            ]]>
+                        </latex-image> 
+                    </image>
+                </p>
+            </solution>
+        </example>
+
+        <assemblage>
+            <title>Bar Graph Features</title>
+            <p>
+                Bar graphs should have the following features:
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Vertical axis with label
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Horizontal axis with labels
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A consistent scale on the vertical axis 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A descriptive title
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </assemblage>
+        
+        <assemblage>
+            <title>Note</title>
+            <p>
+                Bar graphs can be oriented vertically (like we just did) or horizontally.  If they are oriented horizontally, the vertical and horizontal information flips, but all other features will remain the same.
+            </p>
+        </assemblage>
+        <example>
+            <statement>
+                <p>
+                    Now create a bar graph for the data you collected about home states/countries.  Be sure to include the features listed above!
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Answers vary
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            A special type of bar graph is called a <term>Pareto chart</term>
+        </p>
+
+        <definition xml:id="pareto">
+            <statement>
+                <p>
+                    A <term>Pareto chart</term> is a bar graph whose bars are ordered from highest to lowest frequency.
+                </p>
+                <idx><h>Pareto chart</h></idx>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    A recent Math 1473 class had 15 freshmen, 3 sophomores, 10 juniors, and 8 seniors.  Create the Pareto chart for the data.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    As before, the bar chart should look something like this.
+                </p>
+                <p>
+                    <image >
+                        <description>
+                            The Pareto chart for the example
+                        </description>
+                        <latex-image>
+                            <![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[
+                                            title = Class Makeup,
+                                            ybar,
+                                            nodes near coords,
+                                            bar width = 0.5cm,
+                                            symbolic x coords = {Fresh, Jun, Sen, Soph},
+                                            xtick ={Fresh, Jun, Sen, Soph},
+                                        ]
+                                        \addplot coordinates {(Fresh, 15) (Jun, 10) (Sen, 8) (Soph, 3) };
+                                    \end{axis}
+                                \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            Sometimes it is helpful to more than one qualtitative variable on a graph.  This can be accomplished by creating a <term>side-by-side bar graph</term> or a <term>stacked bar graph</term>.
+        </p>
+        <definition xml:id="sbsbar">
+            <statement>
+                <p>
+                    A <term>side-by-side bar graph</term> is a bar graph which shows two or more bars next to each other 
+                </p>
+                <idx><h>Side-by-side Bar Graph</h></idx>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    The 2020 US Census gave the following data about racial identities in the top three most populous cities in Oklahoma:
+                    <tabular>
+                        <row>
+                            <cell>Race</cell>
+                            <cell> Oklahoma City</cell>
+                            <cell>Tulsa</cell>
+                            <cell>Norman</cell>
+                        </row>
+                        <row>
+                            <cell>White only</cell>
+                            <cell>364,706</cell>
+                            <cell>214,012</cell>
+                            <cell>89,283</cell>
+                        </row>
+                        <row>
+                            <cell>Black/African American only</cell>
+                            <cell>95,634</cell>
+                            <cell>61,526</cell>
+                            <cell>6,398</cell>
+                        </row>
+                        <row>
+                            <cell>Asian only</cell>
+                            <cell>31,510</cell>
+                            <cell>14,352</cell>
+                            <cell>5,083</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    Create a side-by-side bar graph to display the data.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The scale on this is hard to get right, but it's something like this.
+                </p>
+                <p>
+                    <image>
+                        <description>
+                            The side-by-side bar graph for the census data given in the example.  Here, 
+                        </description>
+                        <latex-image>
+                           <![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[
+                                        title = Racial Makeup of Oklahoma's 3 Largest Cities (in thousands),
+                                        ybar,
+                                        nodes near coords,
+                                        bar width = 0.5cm,
+                                        symbolic x coords = {OKC, Tulsa, Norman},
+                                        xtick = {OKC, Tulsa, Norman},
+                                        enlarge x limits = 0.25,
+                                        ymin = 0,
+                                        legend cell align = left,
+                                        ]
+                                        
+                                        \addplot coordinates {(OKC, 364.706) (Tulsa, 214.012) (Norman, 89.283)}; %whites
+                                        \addplot coordinates {(OKC, 95.634) (Tulsa, 61.526) (Norman, 6.398)}; %blacks
+                                        \addplot coordinates {(OKC, 31.510) (Tulsa, 14.352) (Norman, 5.083)}; %asians
+                                        \legend{White, Black, Asian};
+                                    \end{axis}
+                                \end{tikzpicture}
+                           ]]>
+                        </latex-image>
+                    </image>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Note that in this example, we needed to include a <term>legend</term> in order to identify what each bar was telling us.
+        </p>
+
+        <definition xml:id="stackedbar">
+            <statement>
+                <p>
+                    A <term>stacked bar graph</term> is a bar graph in which bars are stacked on top of each otehr to show relative size.
+                </p>
+                <idx><h>Stacked Bar Graph</h></idx>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Use a stacked bar graph to display the Census data from Example 1.1.13.  Here it is again:
+                </p>
+                <p>
+                    The 2020 US Census gave the following data about racial identities in the top three most populous cities in Oklahoma:
+                    <tabular>
+                        <row>
+                            <cell>Race</cell>
+                            <cell> Oklahoma City</cell>
+                            <cell>Tulsa</cell>
+                            <cell>Norman</cell>
+                        </row>
+                        <row>
+                            <cell>White only</cell>
+                            <cell>364,706</cell>
+                            <cell>214,012</cell>
+                            <cell>89,283</cell>
+                        </row>
+                        <row>
+                            <cell>Black/African American only</cell>
+                            <cell>95,634</cell>
+                            <cell>61,526</cell>
+                            <cell>6,398</cell>
+                        </row>
+                        <row>
+                            <cell>Asian only</cell>
+                            <cell>31,510</cell>
+                            <cell>14,352</cell>
+                            <cell>5,083</cell>
+                        </row>
+                    </tabular>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <image>
+                        <description>
+                            The stacked bar graph for the census data given in the example.  
+                        </description>
+                        <latex-image>
+                           <![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[
+                                        title = Racial Makeup of Oklahoma's 3 Largest Cities (in thousands),
+                                        ybar stacked,
+                                        bar width = 2cm,
+                                        nodes near coords,
+                                        symbolic x coords = {OKC, Tulsa, Norman},
+                                        xtick = {OKC, Tulsa, Norman},
+                                        enlarge x limits = 0.25,
+                                        ymin = 0,
+                                        legend cell align = left,
+                                        ]
+                                        
+                                        \addplot+[ybar] plot coordinates {(OKC, 364.706) (Tulsa, 214.012) (Norman, 89.283)}; %whites
+                                        \addplot+[ybar] plot coordinates {(OKC, 95.634) (Tulsa, 61.526) (Norman, 6.398)}; %blacks
+                                        \addplot+[ybar] plot coordinates {(OKC, 31.510) (Tulsa, 14.352) (Norman, 5.083)}; %asians
+                                        \legend{White, Black, Asian};
+                                    \end{axis}
+                                \end{tikzpicture}
+                           ]]>
+                        </latex-image>
+                    </image>
+                </p>
+            </solution>
+        </example>
+        <question>
+            <statement>
+                <p>
+                    What are some pros and cons of using a side-by-side bar graph or a stacked bar graph for this data?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Answers vary, but the stacked bar graph gives a better feel for relative population size between the cities while the side-by-side bar graph gives a better feel for relative racial makeups in the individual cities.
+                </p>
+            </solution>
+        </question>
+
+        <p>
+            Another way of visualizing the data is by using a <term>pie chart</term>.
+        </p>
+
+        <definition xml:id="piechart">
+            <statement>
+                <p>
+                    A <term>pie chart</term> is a circle with wedges for each category whose size corresponds to the relative frequency of the category.
+                </p>
+            </statement>
+            <idx><h>Pie Chart</h></idx>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Data for the 2022 Democratic Primary for US Senator in Oklahoma is given below:
+                    <tabular>
+                        <row>
+                            <cell>Candidate</cell>
+                            <cell>Votes</cell>
+                        </row>
+                        <row>
+                            <cell>Bollinger</cell>
+                            <cell>23,367</cell>
+                        </row>
+                        <row>
+                            <cell>Wade</cell>
+                            <cell>19,986</cell>
+                        </row>
+                        <row>
+                            <cell>Horn</cell>
+                            <cell>60,691</cell>
+                        </row>
+                        <row>
+                            <cell>Azma</cell>
+                            <cell>11,478</cell>
+                        </row>
+                        <row>
+                            <cell>Glenn</cell>
+                            <cell>21,198</cell>
+                        </row>
+                        <row>
+                            <cell>Baker</cell>
+                            <cell>22,467</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Create the relative frequency distribution for the data set.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use the relative frequency distribution to create a pie chart for the data.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Take a poll to determine the make of cars that your classmates drive (if they drive).  Use the poll data to create a frequency table.
+                            </p>
+                        </li> 
+                        <li>
+                            <p>
+                                Create the relative frequency table by dividing each frequency by the total responses.  Write the relative frequency as a percentage.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use the relative frequency table to create a pie chart.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Answers vary
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Answers vary here, but make sure that answers are given in percentages.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                With the pie chart, model the apporpriate labeling: either labels on each wedge, or a legend describing each wedge (with relative frequencies).
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+</section>
