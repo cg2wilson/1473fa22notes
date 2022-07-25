@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="stats" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Statistics &amp; Probability</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		<p>
+			This unit focuses on elementary statistics and probability.
+		</p>
+		
+		<p>
+			Directly below are links to quickly navigate to individual sections.
+		</p>
+	</introduction>
+	<xi:include href="./popsample.ptx"/>
+        <!-- 
+            population
+            sampling
+
+            1 day
+        -->
+    <xi:include href="./biasstudies.ptx"/>
+        <!-- 
+            biases
+            studies
+                confounding
+
+            1 days
+        -->
+
+    <xi:include href="./central.ptx"/>
+        <!-- 
+            measures of central tendency
+                mean
+                median
+                mode
+
+            1 day
+        -->
+
+    <xi:include href="./variation.ptx"/>
+        <!-- 
+            measures of variation
+                range
+                quartiles
+                    5 number summary
+                    box plot
+                standard deviation
+                    population
+                    sample
+                variance
+
+            2 days
+        -->
+
+    <xi:include href="./probability.ptx"/>
+        <!-- 
+            definition
+            types
+            odds
+            and/or 
+            independent events
+            conditional probabilities
+            expected value
+
+            2 days
+        -->
+
+    <xi:include href="./permcomb.ptx"/>
+        <!-- 
+            permutations
+            combinations
+
+            2 days
+        -->
+
+        <!-- 
+            9 days
+        -->
+
+        <!-- 
+            8 (data) + 11 (logic) + 6 (finance) + 9 (stats) = 34 days
+        -->
+</chapter>

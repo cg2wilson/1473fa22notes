@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="data-rep" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="data-qual" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Qualitative Data</title>
     
     <subsection xml:id="data-rep-qualquant">
@@ -267,7 +267,7 @@
         </example>
 
         <p>
-            A special type of bar graph is called a <term>Pareto chart</term>
+            A special type of bar graph is called a <term>Pareto chart</term>.
         </p>
 
         <definition xml:id="pareto">
@@ -334,7 +334,7 @@
                     <tabular>
                         <row>
                             <cell>Race</cell>
-                            <cell> Oklahoma City</cell>
+                            <cell>Oklahoma City</cell>
                             <cell>Tulsa</cell>
                             <cell>Norman</cell>
                         </row>
@@ -405,7 +405,7 @@
         <definition xml:id="stackedbar">
             <statement>
                 <p>
-                    A <term>stacked bar graph</term> is a bar graph in which bars are stacked on top of each otehr to show relative size.
+                    A <term>stacked bar graph</term> is a bar graph in which bars are stacked on top of each other to show relative size.
                 </p>
                 <idx><h>Stacked Bar Graph</h></idx>
             </statement>
@@ -557,7 +557,65 @@
             </statement>
             <solution>
                 <p>
-                    
+                    <ol label="a">
+                        <li>
+                            <p>
+                                <tabular>
+                        <row>
+                            <cell>Candidate</cell>
+                            <cell>Relative Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>Bollinger</cell>
+                            <cell>14.68%</cell>
+                        </row>
+                        <row>
+                            <cell>Wade</cell>
+                            <cell>12.56%</cell>
+                        </row>
+                        <row>
+                            <cell>Horn</cell>
+                            <cell>38.13%</cell>
+                        </row>
+                        <row>
+                            <cell>Azma</cell>
+                            <cell>7.21%</cell>
+                        </row>
+                        <row>
+                            <cell>Glenn</cell>
+                            <cell>13.32%</cell>
+                        </row>
+                        <row>
+                            <cell>Baker</cell>
+                            <cell>14.11%</cell>
+                        </row>
+                    </tabular>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <image >
+                                    <description>
+                                        Pie graph for the data above
+                                    </description>
+                                    <latex-image>
+                                      <![CDATA[
+                                        \begin{tikzpicture}
+                                            \pie{
+                                                14.68/Bollinger,
+                                                12.56/Wade,
+                                                38.13/Horn,
+                                                7.21/Azma,
+                                                13.32/Glenn,
+                                                14.11/Baker
+                                            }
+                                        \end{tikzpicture}
+                                      ]]>
+                                    </latex-image>
+                                </image>
+                            </p>
+                        </li>
+                    </ol>
                 </p>
             </solution>
         </example>

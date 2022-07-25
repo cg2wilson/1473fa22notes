@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Logic</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		<p>
+			This unit focuses on logic.
+		</p>
+		
+		<p>
+			Directly below are links to quickly navigate to individual sections.
+		</p>
+	</introduction>
+	<xi:include href="./sets.ptx"/>
+		<!-- 
+			union, intersection, complement
+			universal sets
+			venn diagrams
+			cardinality
+
+			2 days
+		-->
+    <xi:include href="./boolean.ptx"/>
+		<!-- 
+			boolean logic
+			and/or/not/xor
+
+			1 day
+		-->
+	<xi:include href="./statements.ptx"/>
+		<!-- 
+			statements
+
+			1 day
+		-->
+	<xi:include href="./conditional.ptx"/>
+		<!-- 
+			conditional statements
+
+			1 day
+		-->
+	<xi:include href="./quantifiers.ptx"/>
+		<!-- 
+			universal
+			existential
+			negation
+
+			1 day
+		-->
+	<xi:include href="./truthtables.ptx"/>
+		<!-- 
+			conjuntion (and)
+			disjunction (or)
+			negation (not)
+			conditional
+				converse
+				inverse
+				contrapositive
+				equivalences
+			biconditional
+
+			3 days
+		-->
+	<xi:include href="./demorgan.ptx"/>
+		<!-- 
+			demorgan's laws
+
+			1 day
+		-->
+	<xi:include href="./arguments.ptx"/>
+		<!-- 
+			inductive
+			deductive
+			euler diagrams
+			modus ponens
+			modus tollens
+			syllogisms
+				hypothetical
+				disjunctive
+			fallacies	
+				inverse
+				converse
+
+			**add 15 other logical fallacies as core content or as coreq?**
+
+			2 days
+		-->
+
+		<!-- 
+			11 days
+		-->
+
+		<!-- 
+			8 (data) + 11 (logic) = 19 days
+		-->
+	
+</chapter>

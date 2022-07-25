@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="data-misrepresent" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>How Can Data Be Misrepresented?</title>
+    
+    <subsection xml:id="data-misrepresent-qual">
+        <title>Qualitative Data</title>
+            
+            <p>
+                It is not uncommon for data to be used to misinform or mislead.  We'll explore some ways graphs can be used to misrepresent data and some ways to identify when that happens.
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        
+                    </p>
+                </solution>
+            </example>
+
+            <assemblage>
+                <title>Ways </title>
+            </assemblage>
+    </subsection> 
+</section>

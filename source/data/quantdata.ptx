@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="data-quant" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Quantitative Data</title>
+    
+    <subsection xml:id="data-rep-qualquant">
+        <title>Quantitative Data</title>
+
+        <p>
+            In order to represent quantitative data, we can use a frequency table just as we could for qualitative data.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    The results for a math quiz are given below.
+                    <tabular>
+                        <row>
+                            <cell>7.5</cell>
+                            <cell>7</cell>
+                            <cell>9.5</cell>
+                            <cell>9</cell>
+                            <cell>10</cell>
+                            <cell>9</cell>
+                            <cell>7.5</cell>
+                            <cell>5</cell>
+                            <cell>9.5</cell>
+                        </row>
+                        <row>
+                            
+                            <cell>10</cell>
+                            <cell>9.5</cell>
+                            <cell>9</cell>
+                            <cell>7</cell>
+                            <cell>7.5</cell>
+                            <cell>10</cell>
+                            <cell>8</cell>
+                            <cell>7.5</cell>
+                            <cell>9</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    Construct a frequency table for the data above, then construct a bar graph from the frequency table.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <tabular>
+                        <row>
+                            <cell>Score</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>5</cell>
+                            <cell>1</cell>
+                        </row>
+                        <row>
+                            <cell>7</cell>
+                            <cell>2</cell>
+                        </row>
+                        <row>
+                            <cell>7.5</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell>8</cell>
+                            <cell>1</cell>
+                        </row>
+                        <row>
+                            <cell>9</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell>9.5</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell>10</cell>
+                            <cell>3</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    <image>
+                        <description>
+                            The bar graph for the frequency distribution given above
+                        </description>
+                        <latex-image>
+                            <![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[
+                                        title = Quiz Scores,
+                                        ybar,
+                                        bar width = .5cm,
+                                        nodes near coords,
+                                        symbolic x coords = {5,7,7.5,8,9,9.5,10},
+                                        xtick = {5,7,7.5,8,9,9.5,10},
+                                        enlarge x limits = 0.1,
+                                        ymin = 0,
+                                        ]
+                                        
+                                        \addplot coordinates {(5,1) (7,2) (7.5,4) (8,1) (9,4) (9.5,3) (10,3)};
+                                    \end{axis}
+                                \end{tikzpicture}
+                            ]]>
+                        </latex-image> 
+                    </image>
+                </p>
+            </solution>
+        </example>
+
+        <question>
+            <statement>
+                <p>
+                    What are some graphical concerns with the bar graph from the previous example?  What are some ways we could improve the graph?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    There are gaps between numbers, and having numbers on the vertical and horizontal axes could be confusing.
+                </p>
+                <p>
+                    As far as ways to improve, we're trying to lead them to the basics of a histogram: horizontal axis is just a number line
+                </p>
+            </solution>
+        </question>
+
+        <definition xml:id="histogram">
+            <statement>
+                <p>
+                    A <term>histogram</term> is a graphical representation of numerical data that is similar to a bar graph, but uses a number line as the horizontal axis.
+                </p>
+            </statement>
+            <idx><h>Histogram</h></idx>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Create the histogram for the previous example. 
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <image> 
+                        <description>
+                            A rough histogram for the data from Example 1.2.1.
+                        </description>
+                        <latex-image> 
+                            <![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[
+                                        title = Quiz Scores,
+                                        ybar,
+                                        width = 15cm,
+                                        bar width = .6cm,
+                                        nodes near coords,
+                                        xtick = {0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10},
+                                        xmin = 0, xmax=11
+                                        ]
+                                        
+                                        \addplot coordinates {(5,1) (7,2) (7.5,4) (8,1) (9,4) (9.5,3) (10,3)};
+                                    \end{axis}
+                                \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            With quantitative data, often we have to work with large input ranges.  We can handle large ranges by using <term>class intervals</term>.  
+        </p>
+
+        <definition xml:id="classintervals">
+            <statement>
+                <p>
+                    <term>Class intervals</term> are groupings of input dataused to make histograms are easier to read
+                </p>
+            </statement>
+        </definition>
+
+        <assemblage>
+            <title>Class Interval Rules</title>
+            <p>
+                When creating class intervals, we have several rules.
+            </p>
+            <p>
+                <ol label="a">
+                    <li>
+                        <p>
+                            Each piece of data must fall into one of the classes
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Classes must not overlap
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Classes must be of equal width
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            There must be no gaps between classes, even if a class has no data
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </assemblage>
+
+        <example>
+            <statement>
+                <p>
+                    The height (in inches) of the members of a high school basketball team are collected in the table below:
+                </p>
+                <p>
+                    <tabular>
+                        <row>
+                            <cell>65</cell>
+                            <cell>70</cell>
+                            <cell>68</cell>
+                            <cell>72</cell>
+                            <cell>71</cell>
+                        </row>
+                        <row>
+                            <cell>70</cell>
+                            <cell>77</cell>
+                            <cell>72</cell>
+                            <cell>69</cell>
+                            <cell>71</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Create four class intervals using the data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Create the relative frequency distribution for the class intervals.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use part (b) to create the histogram for the data.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Since the range is <m>77-65=12</m>, we'll divide the length by 4 to get class interval widths of 3.  This gives the intervals <m>65\leq x \lt 68</m>, <m>68\leq x \lt 71</m>, <m>71\leq x \lt 74</m>, and <m>74\leq x \leq 77</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <tabular>
+                                    <row>
+                                        <cell>Class</cell>
+                                        <cell>Relative Frequency</cell>
+                                    </row>
+                                    <row>
+                                        <cell><m>65\leq x \lt 68</m></cell>
+                                        <cell>10%</cell>
+                                    </row>
+                                    <row>
+                                        <cell><m>68\leq x \lt 71</m></cell>
+                                        <cell>40%</cell>
+                                    </row>
+                                    <row>
+                                        <cell><m>71\leq x \lt 74</m></cell>
+                                        <cell>40%</cell>
+                                    </row>
+                                    <row>
+                                        <cell><m>74\leq x \leq 77</m></cell>
+                                        <cell>10%</cell>
+                                    </row>
+                                </tabular>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                I can't figure out how to draw the histogram right now.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Get into groups (your instructor will tell you the size). 
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Within your group, figure out how many countries each person has been to.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Your instructor will gather the information from each group and write it down for the class.  With your group, create the histogram for the data.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Answers vary
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Answers vary
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The following table presents the number of hours worked last week by employees at a local drug store.
+                    <tabular>
+                        <row>
+                            <cell>52</cell>
+                            <cell>18</cell>
+                            <cell>2</cell>
+                            <cell>20</cell>
+                            <cell>9</cell>
+                            <cell>9</cell>
+                            <cell>11</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row>
+                            <cell>4</cell>
+                            <cell>12</cell>
+                            <cell>9</cell>
+                            <cell>16</cell>
+                            <cell>10</cell>
+                            <cell>37</cell>
+                            <cell>15</cell>
+                            <cell>18</cell>
+                        </row>
+                        <row>
+                            <cell>4</cell>
+                            <cell>3</cell>
+                            <cell>17</cell>
+                            <cell>19</cell>
+                            <cell>12</cell>
+                            <cell>20</cell>
+                            <cell>11</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>21</cell>
+                            <cell>36</cell>
+                            <cell>17</cell>
+                            <cell>3</cell>
+                            <cell>23</cell>
+                            <cell>28</cell>
+                            <cell>19</cell>
+                            <cell>20</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    Create the histogram by breaking the data into 5 classes.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Still not sure how to make the histogram 
+                </p>
+            </solution>
+        </example>
+        
+
+        <p>
+            Data can also be visualized by using another kind of graphic, called a <term>stem-and-leaf plot</term>.
+        </p>
+
+        <definition xml:id="stemandleaf">
+            <statement>
+                <p>
+                    A <term>stem-and-leaf plot</term> is a graphic which separates numerical data into two pieces: the <term>stem</term> (such as the left-most digits) and the <term>leaf</term> (such as the right-most digit).
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Create the stem-and-leaf plot for the previous example.  Here's the data again:
+                </p>
+                <p>
+                    The following table presents the number of hours worked last week by employees at a local drug store.
+                    <tabular>
+                        <row>
+                            <cell>52</cell>
+                            <cell>18</cell>
+                            <cell>2</cell>
+                            <cell>20</cell>
+                            <cell>9</cell>
+                            <cell>9</cell>
+                            <cell>11</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row>
+                            <cell>4</cell>
+                            <cell>12</cell>
+                            <cell>9</cell>
+                            <cell>16</cell>
+                            <cell>10</cell>
+                            <cell>37</cell>
+                            <cell>15</cell>
+                            <cell>18</cell>
+                        </row>
+                        <row>
+                            <cell>4</cell>
+                            <cell>3</cell>
+                            <cell>17</cell>
+                            <cell>19</cell>
+                            <cell>12</cell>
+                            <cell>20</cell>
+                            <cell>11</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>21</cell>
+                            <cell>36</cell>
+                            <cell>17</cell>
+                            <cell>3</cell>
+                            <cell>23</cell>
+                            <cell>28</cell>
+                            <cell>19</cell>
+                            <cell>20</cell>
+                        </row>
+                    </tabular>
+                </p>
+            </statement>
+            <solution>
+                <tabular>
+                    <row>
+                        <cell>0</cell>
+                        <cell>233446999</cell>
+                    </row>
+                    <row>
+                        <cell>1</cell>
+                        <cell>01122456778899</cell>
+                    </row>
+                    <row>
+                        <cell>2</cell>
+                        <cell>000138</cell>
+                    </row>
+                    <row>
+                        <cell>3</cell>
+                        <cell>67</cell>
+                    </row>
+                    <row>
+                        <cell>4</cell>
+                    </row>
+                    <row>
+                        <cell>5</cell>
+                        <cell>2</cell>
+                    </row>
+                </tabular>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    A Spotify playlist purports to collect the 50 top songs of the week.  For the week of July 25 - July 29, the BPM (beats per minute) of those top 50 songs were collected and are listed below.
+                </p>
+                <p>
+                    <tabular>
+                        <row>
+                            <cell>101</cell>
+                            <cell>140</cell>
+                            <cell>109</cell>
+                            <cell>174</cell>
+                            <cell>160</cell>
+                            <cell>107</cell>
+                            <cell>107</cell>
+                            <cell>141</cell>
+                            <cell>109</cell>
+                            <cell>107</cell>
+                        </row>
+                        <row>
+                            <cell>132</cell>
+                            <cell>169</cell>
+                            <cell>103</cell>
+                            <cell>142</cell>
+                            <cell>126</cell>
+                            <cell>147</cell>
+                            <cell>154</cell>
+                            <cell>166</cell>
+                            <cell>115</cell>
+                            <cell>103</cell>
+                        </row>
+                        <row>
+                            <cell>81</cell>
+                            <cell>115</cell>
+                            <cell>156</cell>
+                            <cell>102</cell>
+                            <cell>129</cell>
+                            <cell>102</cell>
+                            <cell>108</cell>
+                            <cell>165</cell>
+                            <cell>170</cell>
+                            <cell>78</cell>
+                        </row>
+                        <row>
+                            <cell>122</cell>
+                            <cell>95</cell>
+                            <cell>170</cell>
+                            <cell>84</cell>
+                            <cell>112</cell>
+                            <cell>186</cell>
+                            <cell>118</cell>
+                            <cell>180</cell>
+                            <cell>125</cell>
+                            <cell>176</cell>
+                        </row>
+                        <row>
+                            <cell>94</cell>
+                            <cell>120</cell>
+                            <cell>135</cell>
+                            <cell>113</cell>
+                            <cell>101</cell>
+                            <cell>93</cell>
+                            <cell>158</cell>
+                            <cell>117</cell>
+                            <cell>81</cell>
+                            <cell>161</cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Create a histogram for the data by dividing into classes of your choosing.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Create a stem-and-leaf plot for the data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Which graphical representation (if either) do you think best displays the data?  What do you think makes it better than the other? Or, why do you think both representations are good representations?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Answers will vary with class width choices
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <tabular>
+                                    <row>
+                                        <cell>7</cell>
+                                        <cell>8</cell>
+                                    </row>
+                                    <row>
+                                        <cell>8</cell>
+                                        <cell>114</cell>
+                                    </row>
+                                    <row>
+                                        <cell>9</cell>
+                                        <cell>345</cell>
+                                    </row>
+                                    <row>
+                                        <cell>10</cell>
+                                        <cell>112233777899</cell>
+                                    </row>
+                                    <row>
+                                        <cell>11</cell>
+                                        <cell>235578</cell>
+                                    </row>
+                                    <row>
+                                        <cell>12</cell>
+                                        <cell>02569</cell>
+                                    </row>
+                                    <row>
+                                        <cell>13</cell>
+                                        <cell>25</cell>
+                                    </row>
+                                    <row>
+                                        <cell>14</cell>
+                                        <cell>0127</cell>
+                                    </row>
+                                    <row>
+                                        <cell>15</cell>
+                                        <cell>468</cell>
+                                    </row>
+                                    <row>
+                                        <cell>16</cell>
+                                        <cell>01569</cell>
+                                    </row>
+                                    <row>
+                                        <cell>17</cell>
+                                        <cell>0046</cell>
+                                    </row>
+                                    <row>
+                                        <cell>18</cell>
+                                        <cell>06</cell>
+                                    </row>
+                                </tabular>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Which graphical representation (if either) do you think best describes the data?  What do you think makes it better than the other? Or, why do you think both representations are good representations?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        
+    </subsection>
+</section>

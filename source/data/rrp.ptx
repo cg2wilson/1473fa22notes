@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="data-rrp" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Ratios, Rates, Proportions</title>
+    
+    <subsection xml:id="data-rrp-rate">
+        <title>Rates &amp; Ratios</title>
+            
+            <p>
+                RATES AND RATIOS GO HERE TOGETHER.  
+            </p>
+    </subsection> 
+
+    <subsection xml:id="data-misrepresent-quant">
+        <title>Proportions</title>
+
+            <p>
+                PROPORTIONS GO HERE
+            </p>
+    </subsection> 
+</section>

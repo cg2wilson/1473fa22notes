@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="finance" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Finance</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		<p>
+			This unit focuses on personal finance.
+		</p>
+		
+		<p>
+			Directly below are links to quickly navigate to individual sections.
+		</p>
+	</introduction>
+	<xi:include href="./decisions.ptx"/>
+        <!-- 
+            decision matrices
+
+            1 day
+        -->
+    <xi:include href="./taxes.ptx"/>
+        <!-- 
+            flat tax
+            progressive tax
+            modified progressive
+            **other kinds of taxes?
+
+            1 day        
+        -->
+    <xi:include href="./budgets.ptx"/>
+        <!-- 
+            
+            1 day
+        -->
+    <xi:include href="./interest.ptx"/>
+        <!-- 
+            simple
+            compound
+
+            1 day
+        -->
+    <xi:include href="./annuities.ptx"/>
+        <!-- 
+            savings
+            payout
+            loans
+                amoritized/installment
+                loan balance
+
+            2 days
+        -->
+    
+        <!-- 
+            6 days
+        -->
+
+        <!-- 
+            8 (data) + 11 (logic) + 6 (finance) = 25 days
+        -->
+</chapter>

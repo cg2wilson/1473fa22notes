@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="data-measurement" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Measurement &amp; Units</title>
+    
+    <subsection xml:id="data-measurement-units">
+        <title>Different Units</title>
+            
+            <p>
+                DESCRIBE BASIC TYPES OF UNITS: IMPERIAL, METRIC, TEMPERATURE, BASIC AREA
+            </p>
+    </subsection> 
+
+    <subsection xml:id="data-measurement-conversions">
+        <title>Unit Conversions</title>
+
+            <p>
+                UNIT CONVERSIONS
+            </p>
+    </subsection> 
+</section>

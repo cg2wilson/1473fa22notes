@@ -30,7 +30,7 @@
 
 		
 	%GRAPHING
-	\usepackage{pgf,tikz,pgfplots,tikz-cd}
+	\usepackage{pgf,tikz,pgfplots,tikz-cd,pgf-pie}
 		\usetikzlibrary{arrows,arrows.meta,decorations.markings,decorations.pathreplacing,calc}
 		\pgfplotsset{compat=1.15}
 		\usepgfplotslibrary{fillbetween}
@@ -141,6 +141,7 @@
 \newcommand{\Z}{\mathbb{Z}} %integers
 \newcommand{\Nat}{\mathbb{N}} %natural numbers
 \newcommand{\newsec}{\makebox[\textwidth]{\hrulefill}} %divider between pre/in/post-class portions of workbook
+\newcommand{\tabitem}{~~\llap{\textbullet}~~} %used to simulate an itemize inside the above environments
 %-------------------------------------------------------------------------------------------------------
 
 %OPTIONS------------------------------------------------
@@ -160,6 +161,6 @@
 		\clearpage \newpage \thispagestyle{empty}$ $\newpage\clearpage
 		
 
-
+	\subfile{repdata.tex}
 	
 \end{document}

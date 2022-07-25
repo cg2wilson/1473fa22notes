@@ -15,15 +15,28 @@
 			Directly below are links to quickly navigate to individual sections.
 		</p>
 	</introduction>
-    <xi:include href="./repdata.ptx"/>  
-	<!--
-	<xi:include href="./12.xml"/>
-    <xi:include href="./13.xml"/>
-    <xi:include href="./14.xml"/>
-    <xi:include href="./15.xml"/>
-    <xi:include href="./16.xml"/>
-	<xi:include href="./17.xml"/>
-	<xi:include href="./18.xml"/>
-	-->
+    <xi:include href="./qualdata.ptx"/> 
+		<!--
+			2 days
+		-->
+	<xi:include href="./quantdata.ptx"/>
+		<!--
+			2 days
+		-->
+	<xi:include href="./misrepresent.ptx"/>
+		<!--
+			2 days
+		-->
+	<xi:include href="./measurement.ptx"/>
+		<!--
+			1 day
+		-->
+	<xi:include href="./rrp.ptx"/>
+		<!--
+			1 day
+		-->
 	
+		<!-- 
+			8 days total
+		-->
 </chapter>

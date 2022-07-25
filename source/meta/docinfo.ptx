@@ -30,6 +30,7 @@
 <!-- for those in the next element.                                 -->
 	<latex-image-preamble>
 		\usepackage{pgfplots}
+		\usepackage{pgf-pie}
 		\usepackage{tikz}
 			\usetikzlibrary{arrows}
 			\usetikzlibrary{arrows.meta}
