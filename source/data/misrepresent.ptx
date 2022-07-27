@@ -13,18 +13,199 @@
             <example>
                 <statement>
                     <p>
-                        
+                        The seasonally adjusted annual rate for new single-family houses sold in the United States (in thousands) between January 2020 and April 2020 is shown in the bar graph below.
+                    </p>
+                    <p>
+                        <image>
+                            <description>
+                                The bar graph for the data described in the example.  The y-axis begins at 550.
+                            </description>
+                            <latex-image>
+                                <![CDATA[
+                                    \begin{tikzpicture}
+                                        \begin{axis}[
+                                            title = New Single-Family Houses Sold Jan-Apr 2020 (thousands),
+                                            ybar,
+                                            nodes near coords,
+                                            bar width = 1cm,
+                                            symbolic x coords = {Jan, Feb, Mar, Apr},
+                                            xtick = {Jan, Feb, Mar, Apr},
+                                            ymin = 550
+                                        ]
+                                        \addplot coordinates {(Jan, 708) (Feb, 690) (Mar, 610) (Apr, 582)};
+                                        \end{axis}
+                                    \end{tikzpicture}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </p>
+                    <p>
+                        Discuss why this bar graph might be misleading.
                     </p>
                 </statement>
                 <solution>
                     <p>
-                        
+                        The scale of the bars suggests that home sales dropped precipitously between Feb 20 and Apr 20, but in reality only dropped by about 100,000 homes between the two months.
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        The same data from the previous example is graphed again below.
+                    </p>
+                    <p>
+                        <image>
+                            <description>
+                                The bar graph for the data described in the example.  The y-axis begins at 0.
+                            </description>
+                            <latex-image>
+                                <![CDATA[
+                                    \begin{tikzpicture}
+                                        \begin{axis}[
+                                            title = New Single-Family Houses Sold Jan-Apr 2020 (thousands),
+                                            ybar,
+                                            nodes near coords,
+                                            bar width = 1cm,
+                                            symbolic x coords = {Jan, Feb, Mar, Apr},
+                                            xtick = {Jan, Feb, Mar, Apr},
+                                            ymin = 0
+                                        ]
+                                        \addplot coordinates {(Jan, 708) (Feb, 690) (Mar, 610) (Apr, 582)};
+                                        \end{axis}
+                                    \end{tikzpicture}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </p>
+                    <p>
+                        What is different about this graph than the previous one?  In what ways might it be a better representation of the data?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The y-axis begins at 0, so we are able to compare the data from an intuitive baseline.  In doing so, we're able to see that while sales dropped between February 2020 and April 2020, the drop isn't as extreme as suggested by the first graph.
                     </p>
                 </solution>
             </example>
 
             <assemblage>
-                <title>Ways </title>
+                <title>Common Ways to Mislead Using Graphs</title>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Adjusting <m>y-</m>axis
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Using the wrong graphic
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Poor scaling or labeling
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Cherry picking
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
             </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        Why would a pie chart be inappropriate for displaying the new home sales data?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Pie charts should be used to show the relationship between variables/categories, not display purely numerical data.
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Describe why the graph below might be considered misleading.
+                    </p>
+                    <p>
+                        <image source="pictograph_scaled.svg" width="50%">
+                            <description>
+                                An improperly scaled picture graph. Though B is 3x taller than A, it is also 3x wider, giving it the appearance of being 9x larger.
+                            </description>
+                        </image>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Though B is 3x taller than A, it is also 3x wider, giving it the appearance of being 9x larger.
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Discuss your thoughts about the graphic below with one or two people near you.  What do you notice?  What do you believe is missing?
+                    </p>
+                    <p>
+                        <image source="fl_gun_deaths.jpg" width="50%">
+                            <description>Line graph for gun deaths in Florida</description>
+                        </image>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary, but note that the y-axis is inverted
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        The graph below shows the total amount of debt (in trillions) held by the US government between January and July 2020.
+                    </p>
+                    <p>
+                        <image>
+                            <description>
+                            
+                            </description>
+                            <latex-image>
+                                <![CDATA[
+                                    \begin{tikzpicture}
+                                        \begin{axis}[
+                                            title = Total Public Debt (in trillions),
+                                            xmin =0,
+                                            ymin = 22, ymax = 27,
+                                            xtick = {1,2,3,4,5,6,7},
+                                            xticklabels = {Jan,Feb,Mar,Apr,May,Jun,July}
+                                        ]
+                                            \addplot[smooth, mark = *] plot coordinates {(1, 23.2) (2, 23.2) (3, 23.4) (4, 23.7) (5, 24.9) (6, 25.8) (7, 26.4)};
+                                        
+                                        \end{axis}
+                                    \end{tikzpicture}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </p>
+                    <p>
+                        Do you think that the graph gives an accurate picture of the rise of national debt?  Why or why not?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary, but generally no.  The data is cherry picked to show only a large jump between April and June 2020 but ignores trends before and after the time range (which are actually fairly stable)
+                    </p>
+                </solution>
+            </example>
     </subsection> 
 </section>

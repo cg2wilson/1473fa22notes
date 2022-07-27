@@ -6,16 +6,241 @@
     <subsection xml:id="data-rrp-rate">
         <title>Rates &amp; Ratios</title>
             
+            <definition xml:id="ratio">
+                <statement>
+                    <p>
+                        A <term>ratio</term> is a comparison of amounts or quantities.
+                    </p>
+                </statement>
+                <idx><h>Ratio</h></idx>
+            </definition>
+
+            <example>
+                <statement>
+                    <p>
+                        The Dodge Family College of Arts and Sciences oversees 30 departments while the Gallogly College of Engineering has 9 departments.  What is the ratio of Arts and Sciences departments to Engineering departments?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        10/3
+                    </p>
+                </solution>
+            </example>
+
             <p>
-                RATES AND RATIOS GO HERE TOGETHER.  
+                Ratios can be expressed several ways
             </p>
+
+            <assemblage>
+                <title>Ratio Expressions</title>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                Simplified fractions in the form <m>\dfrac{a}{b}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                With a colon in the form <m>a:b</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Verbally in the form "<m>a</m> to <m>b</m>"
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        Express the answer from the previous example in two other ways
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <m>10:3</m> or 10 to 3
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        What is the ratio of glasses-wearing students to non-glasses-wearing students in the class?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        In Giada de Laurentiis' recipe for lasagna rolls, she calls for 15 ounces of ricotta and 1 cup of shredded mozzarella cheese.  What is the ratio of mozzarella to ricotta?  1 dry cup is equal to 6.8 ounces.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        6.8:15
+                    </p>
+                </solution>
+            </example>
+            <definition xml:id="rate">
+                <statement>
+                    <p>
+                        A <term>rate</term> is a ratio comparing two items with different units
+                    </p>
+                </statement> 
+                    <idx><h>Rate</h></idx>
+            </definition>
+
+            <example>
+                <statement>
+                    <p>
+                        Give five different examples of rates that you might see in the wild.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        On March 16, 2022, Shai Gilgeous-Alexander scored 14 field goals on 22 shot attempts against the San Antonio Spurs.
+                    </p>
+                    <p>
+                        <ol label="a">
+                            <li>
+                                <p>
+                                    What is the rate of field goals made to field goals attempted?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    When we perform the division represented by a rate, we find the <term>unit rate</term>.  What was Gilgeous-Alexander's unit rate for shots attempted to shots made in this game?  (In basketball, this unit rate is called the field goal percentage)
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol label="a">
+                            <li>
+                                <p>
+                                    7:11
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    0.636
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        According to Google Maps, the distance between Oklahoma State and the University of Oklahoma is 88.1 miles.  Amy drove from OSU to OU in exactly 100 minutes.  What the unit rate (in miles per hour) for her speed on the trip? (This unit rate is her average speed)
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        52.8 miles per hour
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        At Walmart, a 12.4 oz box of Cheez-Its costs $3.68 while a 21 oz box costs $5.28.  Which box is the most cost effective purchase?  Why?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The 21 oz box cost 25.1 cents per ounce while the 12.4 oz box costs 29.7 cents per ounce; thus, the larger box is more cost effective.
+                    </p>
+                </solution>
+            </example>
     </subsection> 
 
-    <subsection xml:id="data-misrepresent-quant">
+    <subsection xml:id="data-rrp-prop">
         <title>Proportions</title>
 
-            <p>
-                PROPORTIONS GO HERE
-            </p>
+            <definition xml:id="proportion">
+                <statement>
+                    <p>
+                        A <term>proportion</term> is an equation which relates two ratios.
+                    </p>
+                </statement>
+                <idx><h>Proportion</h></idx>
+            </definition>
+
+            <example>
+                <statement>
+                    <p>
+                        Write a proportion relating the number of centimeters in one meter to the number of centimeters in five meters.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <m>\dfrac{100\text{ cm}}{1\text{ m}} = \dfrac{500\text{ cm}}{5\text{ m}}</m>
+                    </p>
+                </solution>
+            </example>
+            <example>
+                <statement>
+                    <p>
+                        Is the proportion <m>\dfrac{5}{8} = \dfrac{55}{80}</m> true or false?  Why?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        False, since the numbers aren't equivalent.  Cross multiplying is probably the easiest way of seeing this.
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        25% of what number is 32?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        128
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        You have an irregularly sized photograph measuring 4 inches by 8 inches, but want to scale it up so that the larger side measures 20 inches.  How long does the shorter side have to be to maintain the size ratio?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        10 inches
+                    </p>
+                </solution>
+            </example>
     </subsection> 
 </section>

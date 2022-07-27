@@ -3,19 +3,446 @@
 <section xml:id="data-measurement" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Measurement &amp; Units</title>
     
-    <subsection xml:id="data-measurement-units">
-        <title>Different Units</title>
+    <subsection xml:id="data-measurement-distance">
+        <title>Measuring Distance</title>
             
-            <p>
-                DESCRIBE BASIC TYPES OF UNITS: IMPERIAL, METRIC, TEMPERATURE, BASIC AREA
+            <p> 
+                 There are many ways of measuring distance.  Here are a few common units of measurement for distance.
             </p>
-    </subsection> 
-
-    <subsection xml:id="data-measurement-conversions">
-        <title>Unit Conversions</title>
 
             <p>
-                UNIT CONVERSIONS
+                <ul>
+                    <li>
+                        <p>
+                            Inches (in)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Feet (ft)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Yards (yd)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Miles (mi)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Centimeters (cm)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Meters (m)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Kilometers (km)
+                        </p>
+                    </li>
+                </ul>
             </p>
+
+            <example>
+                <statement>
+                    <p>
+                        Give an example of something that can be measured using each of the units above.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary
+                    </p>
+                </solution>
+            </example>
+
+            <assemblage>
+                <title>Relationships Between Units</title>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                There are 12 inches in 1 foot
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 3 feet in 1 yard
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 5280 feet in 1 mile
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 100 centimeters in 1 meter
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 100 meters in 1 kilometer
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        Determine an appropriate unit to measure the distance given below.
+                    </p>
+                    <p>
+                        <ol label = "a">
+                            <li>
+                                <p>
+                                    Distance between Norman and Oklahoma City
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Height of a tall building
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Diameter of a cookie
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Length of a bug
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol label = "a">
+                            <li>
+                                <p>
+                                    Miles/kilometers
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Feet/meters
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Inches/centimeters
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Inches/centimeters
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                Converting between units is very important to help us conceptualize and compute information.
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        If there are 3.28 feet in 1 meter, convert 1 mile to 1 kilometer
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        1 mile is 1.61 km
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Convert your height from imperial units (feet and inches) to centimeters.  Use the fact that there are 2.54 centimeters in 1 inch.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Example about converting distances in space 
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        
+                    </p>
+                </solution>
+            </example>
     </subsection> 
+
+    <subsection xml:id="data-measurement-area">
+        <title>Measuring Area</title>
+            <p>
+                While length measures one dimensional objects, area is a measure of two-dimensional objects.
+            </p>
+
+            <assemblage>
+                <title>Area Formulas for Common Shapes</title>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                Rectangles: Length<m>\cdot</m> Width
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Triangles: <m>\dfrac{1}{2}\cdot</m> Length <m>\cdot</m> Width
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Circles: <m>\pi\cdot</m>Radius<m>^2</m>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </assemblage>
+
+            <p>
+                The units of area are similar to the units of length; we find the units for area by squaring the component length unit.  Some common area units are:
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            square inches (in<m>^2</m>)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            square miles (mi<m>^2</m>)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            square meters (m<m>^2</m>)
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        Give an example of something that could be measured using each of the units above
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary
+                    </p>
+                </solution>
+            </example>
+            <example>
+                <statement>
+                    <p>
+                        A new house has a 2.5 acre lot.  What is the square footage of the lot?  Use the fact that there are 3 feet in 1 yard, and 4,840 square yards in 1 acre.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        108,900 square feet
+                    </p>
+                </solution>
+            </example>
+    </subsection>
+
+    <subsection xml:id="data-measurement-volume">
+        <title>Measuring Volume</title>
+            <p>
+                Volume is a measure of three-dimensional objects, the three-dimensional analogue of area.
+            </p>
+
+            <assemblage>
+                <title>Volume Formulas for Common Shapes</title>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                Rectangular prism: Length<m>\cdot</m>Width<m>\cdot</m>Height
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Sphere: <m>\dfrac{4\pi}{3}\cdot</m>Radius<m>^3</m>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        A new piece of luggage has a carrying capacity of 5.2 cubic feet of storage space.  How many cubic inches of space is there?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        There are 8985.6 cubic inches of space.
+                    </p>
+                </solution>
+            </example>
+
+            <p>
+                Liquid volume is often measured with special units.  Some of these are:
+            </p>
+
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Milliliters (mL)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Liters (L)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Fluid Ounces (oz)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Cups (c)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Quarts (qt)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Gallons (gal)
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <assemblage>
+                <title>Relationships Between Units</title>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                There are 1000 milliliters in 1 liter
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 8 fluid ounces in 1 cup
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 4 cups in 1 quart
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                There are 4 quarts in 1 gallon
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        How many fluid ounces are in 2 gallons?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        256 fluid ounces are in 1 gallon
+                    </p>
+                </solution>
+            </example>
+
+    </subsection>
+
+    <subsection xml:id="data-measurement-temperature">
+        <title>Measuring Temperature</title>
+            <p>
+                There are two primary units used to measure temperature: Fahrenheit and Celsius
+            </p>
+
+            <assemblage>
+                <title>Converting Between Fahrenheit and Celsius</title>
+                <p>
+                    To convert from Fahrenheit to Celsius, use the formula
+                    <me>
+                        ^\circ C = (^\circ F-32)\cdot \dfrac{5}{9}
+                    </me>
+                </p>
+                <p>
+                    To convert from Celsius to Fahrenheit, use the formula
+                    <me>
+                        ^\circ F = ^\circ C\cdot \dfrac{9}{5} + 32
+                    </me>
+                </p>
+                <p>
+                    A decent estimate to go from Celsius to Fahrenheit is to double the Celsius temperature, then add 32.
+                </p>
+            </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        The average high in Norman in October is 75<m>^\circ F</m>.  How high is that in Celsius?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        About 23.9<m>^\circ C</m>
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        The 2022 Men's World Cup was moved from Summer 2022 to Winter 2022 because the average temperature in Qatar is about 41<m>^\circ C</m>.  About how hot is that in Fahrenheit?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        About 114<m>^\circ F</m>
+                    </p>
+                </solution>
+            </example>
+    </subsection>
 </section>
