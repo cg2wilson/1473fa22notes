@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="logic-arguments" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Arguments</title>
+
+    <subsection xml:id="logic-arguments-inductive">
+        <title>Inductive Arguments</title>
+    </subsection>
+
+    <subsection xml:id="logic-arguments-deductive">
+        <title>Deductive Arguments</title>
+
+    </subsection>
+
+    <subsection xml:id="logic-arguments-euler">
+        <title>Euler Diagrams</title>
+
+    </subsection>
+
+    <subsection xml:id="logic-arguments-valid">
+        <title>Valid Arguments</title>
+
+    </subsection>
+
+    <subsection xml:id="logic-arguments-invalid">
+        <title>Invalid Arguments</title>
+
+    </subsection>
+</section>

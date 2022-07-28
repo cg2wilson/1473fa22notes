@@ -1,0 +1,788 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="logic-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Sets</title>
+    
+    <subsection xml:id="logic-sets-sets">
+        <title>Set Basics</title>
+
+            <definition xml:id="set">
+                <statement>
+                    <p>
+                        A <term>set</term> is a collection of objects called <term>elements</term>
+                    </p>
+                </statement>
+                <idx><h>Set</h></idx>
+            </definition>
+
+            <example>
+                <statement>
+                    <p>
+                        Write the set of letters in the phrase "The University of Oklahoma"
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        {T,h,e,u,n,i,v,r,s,y,o,k,l,a,h,m}
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Write out the set of classes you're taking right now.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Answers vary
+                    </p>
+                </solution>
+            </example>
+
+            <definition xml:id="setcontain">
+                <statement>
+                    <p>
+                        A set <m>A</m> is said to <term>contain</term> the set <m>B</m> if all elements of <m>B</m> are also elements of <m>A</m>.
+                    </p>
+                    <p>
+                        If the set <m>A</m> contains the set <m>B</m> but is not equal to <m>B</m>, we write <m>B\subset A</m>.  If <m>A</m> contains <m>B</m> and the two sets are equal (that is, if they contain the exact same elements), then we write <m>B\subseteq A</m>.
+                    </p>
+                </statement>
+                <idx><h>Containment</h></idx>
+            </definition>
+            <definition xml:id="subset">
+                <statement>
+                    <p>
+                        If <m>B\subset A</m>, then we say that <m>B</m> is a <term>subset</term> of <m>A</m>.  If <m>B</m> has fewer elements than <m>A</m>, then we say <m>B</m> is a <term>proper subset</term> of <m>A</m>.
+                    </p>
+                </statement>
+                <idx><h>Subset</h></idx>
+                <idx><h>Proper Subset</h></idx>
+            </definition>
+            <example>
+                <statement>
+                    <p>
+                        Let <m>A =</m> {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}.  
+                    </p>
+                    <p>
+                        <ol label="a">
+                            <li>
+                                <p>
+                                    If <m>B</m> is the subset of weekend days, write out <m>B</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>C</m> is the subset of days with the letter n.  What is <m>C</m>?
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol label="a">
+                            <li>
+                                <p>
+                                    <m>B =</m> {Saturday, Sunday}
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>C=</m> {Monday, Wednesday, Sunday}
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+    </subsection>
+
+    <subsection xml:id="logic-unionintersection">
+        <title>Unions, Intersections</title>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>A=</m> {1,2,3,5,7,8}, <m>B=</m> {2,4,5,6,8,9}.
+                </p>
+                <p>
+                    <ol Label="a">
+                        <li>
+                            <p>
+                                <m>A</m> is not a subset of <m>B</m> and <m>B</m> is not a subset of <m>A</m>.  Why?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What elements do <m>A</m> and <m>B</m> have in common?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If we combined <m>A</m> and <m>B</m>, what elements would we have?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <li>
+                            <p>
+                                All elements of <m>A</m> are not elements of <m>B</m> and vice versa
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>A\cap B = \lrbrace{2,5,8}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>A\cup B = \lrbrace{1,2,3,4,5,6,7,8,9}</m>
+                            </p>
+                        </li>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            We have specific terminology for looking for common elements between sets and smashing two sets together.
+        </p>
+
+        <definition xml:id="unionintersection">
+            <statement>
+                <p>
+                    The <term>union</term> of two sets <m>A</m> and <m>B</m> is the collection of elements that are contained in either <m>A</m> or <m>B</m> or both <m>A</m> and <m>B</m>.  We denote the union by writing <m>A\cup B</m>.
+                </p>
+                <p>
+                    The <term>intersection</term> of two sets <m>A</m> and <m>B</m> is the collection of elements that are contained in both <m>A</m> and <m>B</m>.  We denote the intersection by writing <m>A\cap B</m>.
+                </p>
+            </statement>
+            <idx><h>Union</h></idx>
+            <idx><h>Intersection</h></idx>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>A=</m> {1,2,3,5,7,8}, <m>B=</m> {2,4,5,6,8,9}.
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Write <m>A\cup B</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Write <m>A\cap B</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                <m>A\cup B = \lrbrace{1,2,3,4,5,6,7,8,9}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>A\cap B = \lrbrace{2,5,8}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>A =</m> {even numbers}, <m>B=</m> {odd numbers}, and <m>C={1,2,3,4}</m>
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                What is <m>A\cup B</m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is <m>A\cap C</m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is <m>A\cap B</m>?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                <m>A\cup B =</m> {all positive integers}
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>A\cap C = \lrbrace{2,4}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>A\cap B = \emptyset</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <definition xml:id="emptyset">
+            <statement>
+                <p>
+                    The <term>empty set</term> is the set which contains no elements.  We denote it by <m>\emptyset</m>.
+                </p>
+            </statement>
+            <idx><h>Empty set</h></idx>
+        </definition>
+    </subsection>
+
+    <subsection xml:id="logic-universal">
+        <title>Universal Sets</title>
+        
+        <example>
+            <statement>
+                <p>
+                    Consider the set <m>X = </m>{a,e,i,o,u}.  If <m>X</m> is a subset of a larger set <m>Y</m>, what could be a description of <m>Y</m>?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    There are many different answers, but lead them to "the set of all letters".
+                </p>
+            </solution>
+        </example>
+
+        <definition xml:id="universalset">
+            <statement>
+                <p>
+                    The <term>universal set</term> is the set which contains all elements we are interested in.
+                </p>
+            </statement>
+            <idx><h>Universal set</h></idx>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Consider the set <m>D=</m>{chihuahua, labrador, malamute, viszla, greyhound}.  What is the universal set <m>U</m> for <m>D</m>?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    There could be some discussion about this, but "the set of dog breeds" is likely most appropriate.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>C=</m>{Iowa State, Kansas State, Kansas, Oklahoma, Oklahoma State}.
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                What could be the universal set <m>U</m> for <m>C</m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What elements from the universal set are missing from <m>C</m>?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                It could be "colleges in the US", but we're going for "colleges in the Big 12".
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Assuming we get to the "colleges in the Big 12" as the universal set, the missing elements are {Texas, Texas Tech, Baylor, TCU, West Virginia}
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <definition xml:id="complement">
+            <statement>
+                <p>
+                    The <term>complement</term> of a set <m>A</m> is the collection of elements which are in the universal set <m>U</m> but not in <m>A</m>.  We denote the complement of <m>A</m> by <m>A^c</m>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+        <statement>
+            <p>
+                You are given a set <m>A</m> and its universal set.  Identify the complement <m>A^c</m>.
+            </p>
+            <p>
+                <ol label="a">
+                    <li>
+                        <p>
+                            <m>A=\lrbrace{1,4,6,7,9}</m> and <m>U =</m> {whole numbers from 1 and 10}
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>A=</m> {red, yellow, violet} and <m>U=</m> {colors of the rainbow}
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol label="a">
+                    <li>
+                        <p>
+                            <m>A^c = \lrbrace{2,3,5,8,10}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>A^c=</m> {orange, green, blue, indigo}
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                Let <m>K = </m> {Beetlejuice, The Fifth Element, Pulp Fiction}, <m>H = </m> {Beetlejuice, Pulp Fiction, Milk, Pi, The Shining}, and <m>L = </m> {The Fifth Element, Pi, Milk, Anchorman, Friday}
+            </p>
+            <p>
+                <ol label="a">
+                    <li>
+                        <p>
+                            Find <m>(H\cap K)\cup L</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find <m>H\cap (K\cup L)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find <m>(H\cap K)^c\cap L</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol label="a">
+                    <li>
+                        <p>
+                            <m>(H\cap K)\cup L=</m> {Beetlejuice, Pulp Fiction, The Fifth Element, Pi, Milk, Anchorman, Friday}
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find <m>H\cap (K\cup L)=</m> {Beetlejuice, Pulp Fiction}
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find <m>(H\cap K)^c\cap L=</m> {Anchorman, Friday}
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
+    </subsection>
+
+    <subsection xml:id="logic-venn">
+        <title>Venn Diagrams</title>
+            
+            <definition xml:id="venndiagram">
+                <statement>
+                    <p>
+                        A <term>Venn diagram</term> uses circles to represent sets, with overlapping portions representing elements each set has in common.
+                    </p>
+                </statement>
+            </definition>
+
+            <example>
+                <statement>
+                    <p>
+                        Use Venn diagrams to represent <m>A\cup B</m>, <m>A\cap B</m>, and <m>A^c\cap B</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                    Eventually I'll have the shaded diagrams here, but I don't have time right now to figure it out.
+                    <!--
+                        <sidebyside widths="30% 30% 30%">
+                            <image>
+                                <description>
+                                    A Venn diagram of the universal set <m>U</m> with intersection circles <m>A</m> and <m>B</m>.  <m>A\cup B</m> is shaded.
+                                </description>
+                                <latex-image>
+
+                                </latex-image>
+                            </image>
+
+                            <image>
+                                <description>
+                                    A Venn diagram of the universal set <m>U</m> with intersection circles <m>A</m> and <m>B</m>. <m>A\cap B</m> is shaded.
+                                </description>
+                                <latex-image>
+
+                                </latex-image>
+                            </image>
+
+                            <image>
+                                <description>
+                                    A Venn diagram of the universal set <m>U</m> with intersection circles <m>A</m> and <m>B</m>. <m>A^c\cap B</m> is shaded.
+                                </description>
+                                <latex-image>
+
+                                </latex-image>
+                            </image>
+                        </sidebyside>
+                        -->
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Use Venn diagrams to illustrate the set <m>(A\cap B)^c\cap C</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Like before, I intend to draw the picture, but I don't have time right now.
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        Write an expression to describe the shading in the Venn diagram below.
+                    </p>
+                    <p>
+                        <image>
+                            <description>
+                                A Venn diagram with 
+                            </description>
+                            <latex-image>
+                                <![CDATA[
+                                    \begin{tikzpicture}
+                                        \filldraw[fill=gray, opacity=0.5] (-2,-2) rectangle (3,2);
+                                        \scope % A \cap B
+                                        \clip (0,0) circle (1);
+                                        \fill[white] (1,0) circle (1);
+                                        \endscope
+                                        % outline
+                                        \draw (0,0) circle (1)
+                                            (1,0) circle (1);
+                                        \node at (-1.5,1.5) {$U$};
+                                        \node[above] at (0,1) {$A$};
+                                        \node[above] at (1,1) {$B$};
+                                    \end{tikzpicture}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <m>(A\cap B)^c</m>
+                    </p>
+                </solution>
+            </example>
+    </subsection>
+
+    <subsection xml:id="logic-cardinality">
+        <title>Cardinality</title>
+
+        <definition xml:id="cardinality">
+            <statement>
+                <p>
+                    The <term>cardinality</term> of a set is the number of elements it has.  We will denote the cardinality of the set <m>A</m> by writing <m>n(A)</m>.
+                </p>
+            </statement>
+            <idx><h>Cardinality</h></idx>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>A</m> be the set of students in class today.  What is the cardinality of <m>A</m>?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Answer varies
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The set <m>M</m> contains the months which end in -ber and <m>N</m> contains the months which do not.
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                What is <m>n(A)</m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is <m>n(A\cap B)</m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is <m>n(A\cup B)</m> and what does that represent?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                4
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                0
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                12, the number of months in the year
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    A group of students was polled by the OU Daily.  150 students were asked if they primarily used Twitter or Instagram.  57 said Twitter, 80 said Instagram, and 6 said neither.  How many people use both Twitter and Instagram primarily?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    7
+                </p>
+            </solution>
+        </example>
+
+        <assemblage>
+            <title>Rules of Cardinality</title>
+                <p>
+                    <me>
+                        n(A\cup B) = n(A) - n(B) - n(A\cap B)
+                    </me>
+                    <me>
+                        n(A^c) = n(U) - n(A)
+                    </me>
+                </p>
+        </assemblage>
+        <example>
+            <statement>
+                <p>
+                    A survey of new drivers showed that in the past month, 30 new drivers learned on automatic transmissions, 15 learned on cars with standard transmissions, and 8 learned on cars of both types.  If everyone in the survey learned with one of these transmissions, how many new drivers participated in the survey?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    37
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    50 people were asked about their TV watching preferences.  The information is recorded below.
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                24 watched RuPaul's Drag Race (RPDR)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                26 watched Euphoria (E)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                19 watched Star Trek: Strange New Worlds (SNW)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                9 watched RPDR and E
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                7 watched RPDR and SNW
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                10 watched E and SNW
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3 watched all three
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                7 watched none
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    How many people watched RPDR only?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    8
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    A poll of 100 people gave the following information:
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                50 drink Coke, 30 drink Dr. Pepper, and 35 drink Pepsi
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                14 drink Coke and Dr. Pepper
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                7 drink Dr. Pepper and Pepsi
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                9 drink Coke and Pepsi
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3 people drink all three.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Draw a Venn diagram to represent this situation.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                How many people drink Coke but drink neither Dr. Pepper nor Pepsi?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                How many do not drink any of these three drinks?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol label="a">
+                        <li>
+                            <p>
+                                Answers vary
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                30
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                12
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+</section>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="logic-boolean" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Boolean Logic</title>
+    
+    <subsection xml:id="logic-booleanlogic">
+        <title>Boolean Logic</title>
+
+    </subsection>
+
+    <subsection xml:id="logic-andornot">
+        <title>And/Or/Not</title>
+
+    </subsection>
+
+</section>

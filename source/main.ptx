@@ -9,15 +9,9 @@
     <xi:include href="meta/frontmatter.ptx" />
 
     <xi:include href="data/main.ptx" />
-<!--
-    <xi:include href="ch2/main.xml" />
 
-    <xi:include href="ch3/main.xml" />
+    <xi:include href="logic/main.ptx" />
 
-    <xi:include href="ch4/main.xml" />
-	
-	  <xi:include href="ch5/main.xml" />
--->
 <!--
     <xi:include href="meta/backmatter.ptx" />
 -->
